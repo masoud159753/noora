@@ -1,6 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+
+Route::any("/login",[AuthController::class, "login"])->name("login");
+Route::any("/register",[AuthController::class, "register"])->name("register");
+
+
+
+
+
 
 Route::get('/', function () {
     return view('welcome');

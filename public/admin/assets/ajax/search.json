@@ -1,0 +1,268 @@
+{
+  "listItems": [
+    {
+      "name": "داشبورد",
+      "url": "index.html",
+      "icon": "fi fi-rr-apps",
+      "category": "داشبورد"
+    },
+    {
+      "name": "مدیریت تسک",
+      "url": "task-management.html",
+      "icon": "fi fi-rr-apps",
+      "category": "داشبورد"
+    },
+    {
+      "name": "امور مالی",
+      "url": "finance.html",
+      "icon": "fi fi-rr-apps",
+      "category": "داشبورد"
+    },
+    {
+      "name": "فروش",
+      "url": "sales.html",
+      "icon": "fi fi-rr-apps",
+      "category": "داشبورد"
+    },
+    {
+      "name": "آنالیزها",
+      "url": "analytics.html",
+      "icon": "fi fi-rr-apps",
+      "category": "داشبورد"
+    },
+    {
+      "name": "کارمندان",
+      "url": "employee.html",
+      "icon": "fi fi-rr-apps",
+      "category": "داشبورد"
+    },
+    {
+      "name": "گفتگو",
+      "url": "chat.html",
+      "icon": "fi fi-rr-comment",
+      "category": "اپلیکیشن‌ها"
+    },
+    {
+      "name": "تقویم",
+      "url": "calendar.html",
+      "icon": "fi fi-rr-calendar",
+      "category": "اپلیکیشن‌ها"
+    },
+    {
+      "name": "صندوق ورودی",
+      "url": "email/inbox.html",
+      "icon": "fi fi-rr-envelope",
+      "category": "ایمیل"
+    },
+    {
+      "name": "ارسال ایمیل",
+      "url": "email/compose.html",
+      "icon": "fi fi-rr-envelope",
+      "category": "ایمیل"
+    },
+    {
+      "name": "مشاهده ایمیل",
+      "url": "email/read-email.html",
+      "icon": "fi fi-rr-envelope",
+      "category": "ایمیل"
+    },
+    {
+      "name": "تعرفه‌ها",
+      "url": "pages/pricing.html",
+      "icon": "fi fi-rr-file",
+      "category": "صفحات"
+    },
+    {
+      "name": "بلاگ‌ها",
+      "url": "pages/blog.html",
+      "icon": "fi fi-rr-file",
+      "category": "صفحات"
+    },
+    {
+      "name": "لیست بلاگ",
+      "url": "pages/blog-list.html",
+      "icon": "fi fi-rr-file",
+      "category": "صفحات"
+    },
+    {
+      "name": "جزئیات بلاگ",
+      "url": "pages/blog-details.html",
+      "icon": "fi fi-rr-file",
+      "category": "صفحات"
+    },
+    {
+      "name": "خطای ۴۰۴",
+      "url": "pages/error-404.html",
+      "icon": "fi fi-rr-file",
+      "category": "صفحات"
+    },
+    {
+      "name": "خطای کاور",
+      "url": "pages/error-404-cover.html",
+      "icon": "fi fi-rr-file",
+      "category": "صفحات"
+    },
+    {
+      "name": "خطای تمام صفحه",
+      "url": "pages/error-404-full.html",
+      "icon": "fi fi-rr-file",
+      "category": "صفحات"
+    },
+    {
+      "name": "در دست ساخت",
+      "url": "pages/under-construction.html",
+      "icon": "fi fi-rr-file",
+      "category": "صفحات"
+    },
+    {
+      "name": "ورود",
+      "url": "authentication/login-basic.html",
+      "icon": "fi fi-rr-user-key",
+      "category": "احراز هویت"
+    },
+    {
+      "name": "ثبت نام",
+      "url": "authentication/register-basic.html",
+      "icon": "fi fi-rr-user-key",
+      "category": "احراز هویت"
+    },
+    {
+      "name": "فراموشی رمز عبور",
+      "url": "authentication/forgot-password-basic.html",
+      "icon": "fi fi-rr-user-key",
+      "category": "احراز هویت"
+    },
+    {
+      "name": "رمز عبور جدید",
+      "url": "authentication/new-password-basic.html",
+      "icon": "fi fi-rr-user-key",
+      "category": "احراز هویت"
+    },
+    {
+      "name": "آکاردئون",
+      "url": "components/accordion.html",
+      "icon": "fi fi-rr-flux-capacitor",
+      "category": "اجزای رابط کاربری"
+    },
+    {
+      "name": "نشان (بج)",
+      "url": "components/badge.html",
+      "icon": "fi fi-rr-flux-capacitor",
+      "category": "اجزای رابط کاربری"
+    },
+    {
+      "name": "دکمه‌ها",
+      "url": "components/buttons.html",
+      "icon": "fi fi-rr-flux-capacitor",
+      "category": "اجزای رابط کاربری"
+    },
+    {
+      "name": "تب‌ها",
+      "url": "components/tabs.html",
+      "icon": "fi fi-rr-flux-capacitor",
+      "category": "اجزای رابط کاربری"
+    },
+    {
+      "name": "تولتیپ",
+      "url": "components/tooltips.html",
+      "icon": "fi fi-rr-flux-capacitor",
+      "category": "اجزای رابط کاربری"
+    },
+    {
+      "name": "آواتار",
+      "url": "extended-ui/avatar.html",
+      "icon": "fi fi-rr-apps-add",
+      "category": "رابط کاربری پیشرفته"
+    },
+    {
+      "name": "عملیات کارت",
+      "url": "extended-ui/card-action.html",
+      "icon": "fi fi-rr-apps-add",
+      "category": "رابط کاربری پیشرفته"
+    },
+    {
+      "name": "کشیدن و رها کردن",
+      "url": "extended-ui/drag-and-drop.html",
+      "icon": "fi fi-rr-apps-add",
+      "category": "رابط کاربری پیشرفته"
+    },
+    {
+      "name": "Swiper",
+      "url": "extended-ui/swiper.html",
+      "icon": "fi fi-rr-apps-add",
+      "category": "رابط کاربری پیشرفته"
+    },
+    {
+      "name": "Flaticon",
+      "url": "icons/flaticon.html",
+      "icon": "fi fi-rr-bolt",
+      "category": "آیکون‌ها"
+    },
+    {
+      "name": "Lucide",
+      "url": "icons/lucide.html",
+      "icon": "fi fi-rr-bolt",
+      "category": "آیکون‌ها"
+    },
+    {
+      "name": "Fontawesome",
+      "url": "icons/fontawesome.html",
+      "icon": "fi fi-rr-bolt",
+      "category": "آیکون‌ها"
+    },
+    {
+      "name": "عناصر فرم",
+      "url": "forms/form-elements.html",
+      "icon": "fi fi-rr-form",
+      "category": "فرم‌ها"
+    },
+    {
+      "name": "persian datepicker",
+      "url": "forms/persian-datepicker.html",
+      "icon": "fi fi-rr-form",
+      "category": "فرم‌ها"
+    },
+    {
+      "name": "Tagify",
+      "url": "forms/tagify.html",
+      "icon": "fi fi-rr-form",
+      "category": "فرم‌ها"
+    },
+    {
+      "name": "جداول پایه",
+      "url": "table/tables-basic.html",
+      "icon": "fi fi-rr-table-layout",
+      "category": "جدول"
+    },
+    {
+      "name": "جداول پیشرفته",
+      "url": "table/tables-datatable.html",
+      "icon": "fi fi-rr-table-layout",
+      "category": "جدول"
+    },
+    {
+      "name": "Apexchart",
+      "url": "chart/apexchart.html",
+      "icon": "fi fi-rr-chart-pie-alt",
+      "category": "نمودارها"
+    },
+    {
+      "name": "Chartjs",
+      "url": "chart/chartjs.html",
+      "icon": "fi fi-rr-chart-pie-alt",
+      "category": "نمودارها"
+    },
+    {
+      "name": "JS Vector map",
+      "url": "maps/jsvectormap.html",
+      "icon": "fi fi-rr-marker",
+      "category": "نقشه‌ها"
+    },
+    {
+      "name": "Leaflet",
+      "url": "maps/leaflet.html",
+      "icon": "fi fi-rr-marker",
+      "category": "نقشه‌ها"
+    }
+  ]
+}

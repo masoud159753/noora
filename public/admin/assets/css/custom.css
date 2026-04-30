@@ -1,0 +1,20 @@
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.text-danger{
+    background: #ffeaee;
+    margin-top: 5px;
+    border-radius: 5px;
+    /* height: 27px; */
+    padding: 5px 10px;
+    margin-bottom: -15px;
+}
