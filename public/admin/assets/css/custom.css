@@ -18,3 +18,12 @@ input[type="number"] {
     padding: 5px 10px;
     margin-bottom: -15px;
 }
+
+.check-code-input{
+    letter-spacing: 50px;
+    text-align: center;
+}
+
+input {
+    /*caret-color: transparent;*/
+}

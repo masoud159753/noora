@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthController;
 Route::any("/login",[AuthController::class, "login"])->name("login");
 Route::any("/register",[AuthController::class, "register"])->name("register");
 
+Route::any("/checkcode",[AuthController::class, "checkcode"])->name("checkcode");
 
 
 

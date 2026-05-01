@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
@@ -24,20 +25,28 @@ class AuthController extends Controller
     }
 
 
-    public function register(Request $request){
+    public function register(Request $request)
+    {
         if ($request->isMethod("get")) {
             return view("admin.authentication.register-basic");
-        }
-        else{
-            $request->validate(['name'=>'required','mobile'=>'required|numeric|unique:users','password'=>'required|min:6']);
+        } else {
+            $request->validate(['name' => 'required', 'mobile' => 'required|numeric|unique:users', 'password' => 'required|min:6']);
 
-            $sms=Sms::send($request->post('mobile'),'379719',
-                ["name"=>"code", "value"=> "989631"]);
+            $rand = rand(10000, 99999);
 
+            Session::put('code', $rand);
+            Session::put('mobile', $request->post('mobile'));
+            Session::put('password', \request('password'));
+            Session::put('name', \request('name'));
 
-            if ($sms['message']=='موفق') {
-                return 'ok';
+            $sms = Sms::send($request->post('mobile'), '379719',
+                ["name" => "code", "value" => $rand]);
+
+            if ($sms['message'] == 'موفق') {
+                return redirect(route('checkcode'));
             }
+
+
 
 //            User::create([
 //                'name'=>$request->post('name'),
@@ -48,4 +57,13 @@ class AuthController extends Controller
 //            return redirect('/dashboard');
         }
     }
+
+
+        public function checkcode(Request $request)
+        {
+            if ($request->isMethod("get")) {
+                return view("admin.authentication.checkcode-basic");
+            }
+        }
+
 }
