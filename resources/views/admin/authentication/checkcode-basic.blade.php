@@ -24,7 +24,7 @@
 		</h5>
 	   </div>
 
-	   <form action="{{route('register')}}" method="post">
+	   <form action="{{route('checkcode')}}" method="post">
            {{csrf_field()}}
 
 
@@ -32,18 +32,22 @@
 		 <label class="form-label" for="registerEmail">
 		  کد دریافتی را وارد کنید
 		 </label>
-		 <input class="form-control check-code-input" id="registerEmail"
-                placeholder="" type="number" maxlength="5" name="mobile"
+		 <input class="form-control check-code-input" id="registerEmail" required
+                placeholder="" type="number" maxlength="5" name="code"
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
             @error('mobile')
             <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+			@if(session('error'))
+            <div class="text-danger">{{session('error')}}</div>
             @enderror
 		</div>
 		<div class="mb-4">
 
 		 <div class="password-wrapper">
 
-             @error('password')
+             @error('code')
              <div class="text-danger">{{ $message }}</div>
              @enderror
 
@@ -74,5 +78,17 @@
 	</div>
    </div>
   </div>
+
+<script>
+document.querySelectorAll('[required]').forEach(function(input) {
+  input.addEventListener("invalid", function () {
+    this.setCustomValidity("تکمیل این گزینه الزامیست !");
+  });
+
+  input.addEventListener("input", function () {
+    this.setCustomValidity("");
+  });
+});
+</script>
 
 @endsection

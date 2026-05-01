@@ -46,15 +46,6 @@ class AuthController extends Controller
                 return redirect(route('checkcode'));
             }
 
-
-
-//            User::create([
-//                'name'=>$request->post('name'),
-//                'mobile'=>$request->post('mobile'),
-//                'password'=>Hash::make($request->post('password')),
-//            ]);
-//
-//            return redirect('/dashboard');
         }
     }
 
@@ -63,6 +54,14 @@ class AuthController extends Controller
         {
             if ($request->isMethod("get")) {
                 return view("admin.authentication.checkcode-basic");
+            }
+            else{
+                if ($request->get('code') ==  Session::get('code')){
+                    
+                }
+                else{
+                    return redirect()->back()->with('error','کد وارد شده صحیح نیست بادقت بیشتر وارد کنید و یا کد را مجدد دریافت کنید.');
+                }
             }
         }
 

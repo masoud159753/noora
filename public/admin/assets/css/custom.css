@@ -11,12 +11,13 @@ input[type="number"] {
 }
 
 .text-danger{
-    background: #ffeaee;
+    background: #fff2f4;
     margin-top: 5px;
     border-radius: 5px;
     /* height: 27px; */
     padding: 5px 10px;
     margin-bottom: -15px;
+    text-align: justify;
 }
 
 .check-code-input{

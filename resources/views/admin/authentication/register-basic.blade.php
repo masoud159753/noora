@@ -68,11 +68,11 @@
 		</div>
 		<div class="mb-4">
 		 <div class="form-check mb-0">
-		  <input class="form-check-input" id="termsConditions" name="terms" type="checkbox"/>
+		  <input class="form-check-input" required id="termsConditions" name="terms" type="checkbox"/>
 		  <label class="form-check-label" for="termsConditions">
 		   موافقم با
 		   <a href="javascript:void(0);">
-		قوانین و شرایط حفظ حریم خصوصی
+		قوانین و مقررات استفاده از نرم افزار
 		   </a>
 		  </label>
 		 </div>
@@ -103,4 +103,16 @@
 	</div>
    </div>
   </div>
+
+<script>
+const input = document.getElementById("termsConditions");
+
+input.addEventListener("invalid", function () {
+  input.setCustomValidity("قوانین و مقررات را تایید نمایید");
+});
+
+input.addEventListener("input", function () {
+  input.setCustomValidity(""); // reset message when user types
+});
+</script>
 @endsection
