@@ -28,7 +28,10 @@
 	   </div>
 	   <form action="{{route('register')}}" method="post">
            {{csrf_field()}}
-
+           @if(session('error'))
+           <div class="text-danger">{{ session('error') }}</div>
+           @endif
+           <br>
 		<div class="mb-4">
 		 <label class="form-label" for="registerName">
 		  نام
@@ -84,8 +87,8 @@
 		</div>
 		<p class="mb-5 text-center">
 		 حسابی دارید؟
-		 <a href="./demo/authentication/login.html">
-		  اینجا لاگین
+		 <a href="{{route('login')}}">
+		  ورود کنید
 		 </a>
 		</p>
 		<div class="border-bottom position-relative my-4 text-center">
@@ -93,7 +96,7 @@
 		  یا ادامه با
 		 </span>
 		</div>
-		<button class="btn btn-light waves-effect waves-light w-100" type="submit">
+		<button class="btn btn-light waves-effect waves-light w-100" type="button">
 		 <img alt="" class="me-1" src="./admin/assets/images/icons/google.svg"/>
 		 با گوگل لاگین
 		</button>

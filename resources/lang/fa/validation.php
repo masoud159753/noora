@@ -189,6 +189,14 @@ return [
         'password' => 'رمز عبور',
         'password_confirmation' => 'تاییدیه رمز عبور',
         'current_password' => 'رمز عبور فعلی',
+        'amount' =>'مبلغ',
+        'account_id'=>'حساب',
+        'trans_type'=>'نوع تراکنش',
+        'income'=>'درآمد',
+        'expense'=>'هزینه کرد',
+        'transfer'=>'انتقال',
+        'to_account_id'=>'حساب مقصد',
+        'from_account_id'=>'حساب مبدا',
 
     ],
 

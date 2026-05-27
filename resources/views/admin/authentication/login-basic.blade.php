@@ -24,19 +24,24 @@
 		 برای دسترسی به داشبورد مدیریت امن خود وارد سیستم شوید.
 		</p>
 	   </div>
-	   <form action="./index.html">
+	   <form action="{{route('login')}}" method="post">
+           {{csrf_field()}}
 		<div class="mb-4">
+            @error('fail')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+            <br>
 		 <label class="form-label" for="loginEmail">
-		  آدرس ایمیل
+		  شماره موبایل
 		 </label>
-		 <input class="form-control" id="loginEmail" placeholder="info@example.com" type="email"/>
+		 <input class="form-control" id="loginEmail"  type="number" name="mobile"/>
 		</div>
 		<div class="mb-4">
 		 <label class="form-label" for="loginPassword">
 		  رمز عبور
 		 </label>
 		 <div class="password-wrapper">
-		  <input class="form-control password-input" id="loginPassword" placeholder="********" type="password"/>
+		  <input class="form-control password-input" id="loginPassword" placeholder="********" type="password" name="password"/>
 		  <button aria-label="Show password" aria-pressed="false" class="toggle-password" id="togglePassword" title="Show password" type="button">
 		   <i aria-hidden="true" class="close fi fi-rr-eye-crossed">
 		   </i>
@@ -60,7 +65,7 @@
 		</div>
 		<div class="mb-3">
 		 <button class="btn btn-primary waves-effect waves-light w-100" type="submit" value="Submit">
-		  لاگین
+		  ورود
 		 </button>
 		</div>
 		<p class="mb-5 text-center">

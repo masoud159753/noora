@@ -21,10 +21,33 @@ input[type="number"] {
 }
 
 .check-code-input{
-    letter-spacing: 50px;
+    letter-spacing: 20px;
     text-align: center;
 }
 
 input {
     /*caret-color: transparent;*/
+}
+
+
+
+.tagify__dropdown__item{
+    padding-right: 10px !important;
+}
+
+.form-label {
+    margin-bottom: 10px;
+}
+
+.form-control , .form-select{
+    font-size: 16px !important;
+}
+
+.datepicker-container a,.datepicker-container span,.datepicker-container div,.datepicker-container li,.datepicker-container{
+
+    font-size: 15px;
+}
+
+.to-account-row{
+    display: none;
 }

@@ -110,7 +110,7 @@ if (tagifyUsersList) {
 
 	// Remove dropdown header
 	// No dropdownHeader or dropdown.createListHTML is used
-	
+
 	// Optional: show name <email> while editing
 	tagify.on('edit:start', ({ detail: { tag, data } }) => {
 		tagify.setTagTextNode(tag, `${data.name} <${data.email}>`);
